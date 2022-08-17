@@ -1,3 +1,7 @@
+create schema pokedex;
+
+use pokedex;
+
 create table pokemon (
 	id int auto_increment not null,
     nome varchar(250) not null,
