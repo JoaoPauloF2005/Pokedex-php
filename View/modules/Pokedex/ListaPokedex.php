@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/../../css/estilo_home.css">
+
     <title>Lista Nomes</title>
 </head>
 <body>
 
-   
+    <header>
+        <?php include 'View/modules/Pagina_Inicial/home.php' ?>
+    </header>
 
         <?php foreach($model->rows as $item): ?>
             <div class="card">
