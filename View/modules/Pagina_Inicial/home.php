@@ -19,8 +19,13 @@
            <li> <a href="">INÍCIO </a> </li>
            <li> <a href="">CADASTRAR POKÉMON </a> </li>
            <li> <a href="">LISTA DE POKÉMON CADASTRADO  </a> </li>
-           <li> <a href=""> LOGIN </a> </li>
+        </ul>
+    </div>
+
+    <div id="login">
+        <ul>
            <li> <a href=""> SAIR </a> </li>
+          <li> <a href=""> LOGIN </a> </li>
        
         </ul>
 
