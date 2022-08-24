@@ -1,5 +1,5 @@
 #menu-h img {
-   margin-top: 15px;
+    margin-top: 15px;
     height: 100px;
     height: 100px;
     padding: 0;
@@ -8,9 +8,10 @@
 }
 
 #menu-h li {
-    margin-left: 110px;
+    margin-left: 200px;
     margin-top: 45px;
     float: left;
+  
 }
 
 #menu-h ul li {
@@ -20,12 +21,31 @@
 #menu-h ul li a {
     border-radius: 10px;
     color: #000000;
-    padding: 15px;
+    padding: 10px;
     display: inline-block;
     text-decoration: none;
     transition: background .4s;
+  
 }
 
 #menu-h ul li a:hover {
     background-color: rgb(255, 2, 2);
 }
+
+#login ul li{
+    float: right;
+    display: inline;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#login ul li a{
+    border-style:inset;
+    border-color: red;
+    border-radius: 8px;
+    color: #000000;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 45px;
+}
+
