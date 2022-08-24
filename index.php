@@ -6,6 +6,11 @@ include 'Controller/PokedexController.php';
 
 switch($uri_parse)
 {
+
+    case '/home':
+        include 'View/modules/Pagina_Inicial/home.php';
+    break;
+    
     case '/pokedex':
         PokedexController::index();
     break;
