@@ -16,9 +16,9 @@
         <ul>
          
           
-           <li> <a href="">INÍCIO </a> </li>
-           <li> <a href="">CADASTRAR POKÉMON </a> </li>
-           <li> <a href="">LISTA DE POKÉMON CADASTRADO  </a> </li>
+           <li> <a href="/home">INÍCIO </a> </li>
+           <li> <a href="/pokedex/form">CADASTRAR POKÉMON </a> </li>
+           <li> <a href="/pokedex/save">LISTA DE POKÉMON CADASTRADO  </a> </li>
         </ul>
     </div>
 
