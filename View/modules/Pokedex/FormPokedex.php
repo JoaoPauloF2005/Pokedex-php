@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pokemons</title>
+    <link rel="stylesheet" href="/../../css/estilo_home.css">
+
+    <title>Cadastro de Pokémons</title>
    
     <style>
         
@@ -14,6 +16,12 @@
 <body>
 
     <form action="/pokedex/save" method="post">
+
+    <header>
+        <?php include 'View/modules/Pagina_Inicial/home.php' ?>
+    </header>
+
+    <br>   <br>   <br>   <br>   <br>   <br>   <br>
 
         <div class="container">
             <input type="hidden" value="<?= $model->id ?>" name="id" />
