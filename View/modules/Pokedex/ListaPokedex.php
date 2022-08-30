@@ -14,6 +14,8 @@
         <?php include 'View/modules/Pagina_Inicial/home.php' ?>
     </header>
 
+    <br> <br> <br> <br>
+
         <?php foreach($model->rows as $item): ?>
             <div class="card">
 
