@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +16,13 @@
 
     <br> <br> <br> <br>
 
+ 
+
+
         <?php foreach($model->rows as $item): ?>
             <div class="card">
 
-            <div class="card">
+            <div class="img-fluid" alt="Imagem responsiva">
                 <img class="card-img-top" src="<?= $item['imagem'] ?>">
          
          <ul class="list-group list-group-flush">
@@ -53,6 +56,11 @@
                      <a href="/pokedex/delete?id=<?= $item['id'] ?>">Deletar</a> 
                  </button>
              </div>
+
+             
+
+  
+</div>
         <?php endforeach ?>
 
         
