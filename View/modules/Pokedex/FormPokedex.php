@@ -21,7 +21,7 @@
         <?php include 'View/modules/Pagina_Inicial/home.php' ?>
     </header>
 
-    <br>   <br>   <br>   <br>   <br>   <br>   <br>
+    <br>   <br>   <br>   <br>   <br>   <br>   <br> <br>
 
         <div class="container">
             <input type="hidden" value="<?= $model->id ?>" name="id" />
