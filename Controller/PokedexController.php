@@ -39,9 +39,6 @@ class PokedexController
         $model->altura = $_POST['altura'];
         $model->imagem = $_POST['imagem'];
 
-
-        
-        
         $model->save(); 
 
         header("Location: /pokedex"); 

@@ -35,7 +35,7 @@ switch($uri_parse)
     break;
 
     default:
-        echo "erro 404";
+    header("Location: /home");
     break;
     
 }

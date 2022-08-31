@@ -8,12 +8,12 @@
     <link rel="shortcut icon" href="/../../img/simbolo_pokemon.jpg" type="image/x-icon">
     
 
-    <title>Document</title>
+    <title>Pagina inicial</title>
 </head>
 <body>
 
     <div id="menu-h">
-        <a href=""> <img src="img/simbolo_pokemon.jpg"></a>
+        <a href="/home"> <img src="img/simbolo_pokemon.jpg"></a>
         <ul>
          
           

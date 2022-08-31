@@ -29,6 +29,7 @@ class PokedexDAO
         $stmt->bindValue(4, $model->peso);
         $stmt->bindValue(5, $model->altura);
         $stmt->bindValue(6, $model->imagem);
+   
 
         $stmt->execute();
     } 
