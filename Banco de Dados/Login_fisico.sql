@@ -2,8 +2,9 @@ create schema Login;
 
 use Login;
 
-Create table usuarios (
-ID Int UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
-login Varchar(30),
-senha Varchar(40),
-Primary Key (ID)) ENGINE = MyISAM;
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
