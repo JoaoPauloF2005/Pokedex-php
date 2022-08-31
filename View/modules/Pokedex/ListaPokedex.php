@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/../../css/estilo_home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/../../css/estilo_listPokedex.css">
+    <link rel="shortcut icon" href="/../../img/simbolo_pokemon.jpg" type="image/x-icon">
 
     <title>Lista Nomes</title>
 </head>
@@ -19,58 +21,34 @@
  
 
 
-        <?php foreach($model->rows as $item): ?>
+    <?php foreach($model->rows as $item): ?>
             <div class="card">
-
-            <div class="img-fluid" alt="Imagem responsiva">
                 <img class="card-img-top" src="<?= $item['imagem'] ?>">
-         
-         <ul class="list-group list-group-flush">
-                 <li class="list-group-item" style="color:#212121">Nome do Pokemon: <?= $item['nome'] ?></li>
-             </ul>
+                <div class="card-body">
+                    <h5 class="card-title"><?= $item['nome'] ?></h5>
+                    <ul class="list-group list-group-flush">
+                        <p class="card-text"><?= $item['habilidades'] ?> </p>
+                        <p class="card-text"><?= $item['tipo'] ?></p>
+                        <p class="card-text"><?= $item['peso'] ?></p>
+                        <p class="card-text"><?= $item['altura'] ?></p>
+                     
 
-             <ul class="list-group list-group-flush">
-                 <li class="list-group-item" style="color:#212121">Hablidades: <?= $item['habilidades'] ?></li>
-             </ul>
+                    </ul>
+                </div>
+                <div class="card-body">
+                <a href="/pokedex/form?id=<?= $item['id'] ?>" class="card-link">Editar Pokemon</a></b>
+                    <a href="/pokedex/delete?id=<?= $item['id'] ?>" class="card-link">Deletar</a>
+                </div>
+            </div>
+            <td>
+        </tr>
+    <?php endforeach ?>
 
-                <ul class="list-group list-group-flush">
-                 <li class="list-group-item" style="color:#212121">Tipo: <?= $item['tipo'] ?></li>
+    <?php if(count($model->rows) == 0): ?>
+        <tr>
+            <td colspan="5"> <b>Nenhum registro encontrado.</b></td>
+        </tr>
+    <?php endif ?>
 
-                 <ul class="list-group list-group-flush">
-                 <li class="list-group-item" style="color:#212121">Peso: <?= $item['peso'] ?></li>
-             </ul>
-
-             <ul class="list-group list-group-flush">
-                 <li class="list-group-item" style="color:#212121">Altura: <?= $item['altura'] ?></li>
-             </ul>
-
-            
-
-                 <div class="card-body">
-
-                 <button type="button" class="btn btn-dark">
-                     <a href="/pokedex/form?id=<?= $item['id'] ?>">Editar Pokemon</a> 
-                 </button>
-
-                 <button type="button" class="btn btn-dark">
-                     <a href="/pokedex/delete?id=<?= $item['id'] ?>">Deletar</a> 
-                 </button>
-             </div>
-
-             
-
-  
-</div>
-        <?php endforeach ?>
-
-        
-        <?php if(count($model->rows) == 0): ?>
-            <tr>
-                <td colspan="5">Nenhum registro encontrado.</td>
-            </tr>
-        <?php endif ?>
-
-    </table>
-    
 </body>
 </html>
