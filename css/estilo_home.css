@@ -42,7 +42,7 @@ body{
     font-family:'Times New Roman', Times, serif;
 }
 
-#login ul li a{
+#login{
     border-style:inset;
     border-color: red;
     border-radius: 8px;
