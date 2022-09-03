@@ -6,13 +6,7 @@ include 'Controller/PokedexController.php';
 
 switch($uri_parse)
 {
-    case '/welcome':
-        include 'View/modules/Login/welcome.php';
-    break;
-
-    case '/login':
-        include 'View/modules/Login/login.php';
-    break;
+   
 
     case '/home':
         include 'View/modules/Pagina_Inicial/home.php';
