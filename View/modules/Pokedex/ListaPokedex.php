@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/../../css/estilo_listPokedex.css">
     <link rel="shortcut icon" href="/../../img/simbolo_pokemon.jpg" type="image/x-icon">
 
-    <style>
+       <style>
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 </style>
 
@@ -50,9 +50,11 @@
     <?php endforeach ?>
 
     <?php if(count($model->rows) == 0): ?>
+        <div id="resposta">
         <tr>
             <td colspan="5"> <center><br><br><br><b>Nenhum registro encontrado.</b></td></center>
         </tr>
+        </div>
     <?php endif ?>
 
 </body>
