@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/../../css/estilo_listPokedex.css">
     <link rel="shortcut icon" href="/../../img/simbolo_pokemon.jpg" type="image/x-icon">
 
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
+
     <title>Lista Nomes</title>
 </head>
 <body>
@@ -27,7 +31,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Nome:  <?= $item['nome'] ?></h5>
                     <ul class="list-group list-group-flush">
-                        
+
                         <p class="card-text">Habilidades:  <?= $item['habilidades'] ?> </p>
                         <p class="card-text">Tipo:  <?= $item['tipo'] ?></p>
                         <p class="card-text">Peso:  <?= $item['peso'] ?></p>
