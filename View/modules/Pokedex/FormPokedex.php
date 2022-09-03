@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="/../../css/estilo_home.css">
     <link rel="shortcut icon" href="/../../img/simbolo_pokemon.jpg" type="image/x-icon">
     
-
-    <title>Cadastro de Pokémons</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
+    
+   <title>Cadastro de Pokémons</title>
    
 </head>
 <body>
