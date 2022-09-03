@@ -25,12 +25,13 @@
             <div class="card">
                 <img class="card-img-top" src="<?= $item['imagem'] ?>">
                 <div class="card-body">
-                    <h5 class="card-title"><?= $item['nome'] ?></h5>
+                    <h5 class="card-title">Nome:  <?= $item['nome'] ?></h5>
                     <ul class="list-group list-group-flush">
-                        <p class="card-text"><?= $item['habilidades'] ?> </p>
-                        <p class="card-text"><?= $item['tipo'] ?></p>
-                        <p class="card-text"><?= $item['peso'] ?></p>
-                        <p class="card-text"><?= $item['altura'] ?></p>
+                        
+                        <p class="card-text">Habilidades:  <?= $item['habilidades'] ?> </p>
+                        <p class="card-text">Tipo:  <?= $item['tipo'] ?></p>
+                        <p class="card-text">Peso:  <?= $item['peso'] ?></p>
+                        <p class="card-text">Altura:  <?= $item['altura'] ?></p>
                      
 
                     </ul>
@@ -46,7 +47,7 @@
 
     <?php if(count($model->rows) == 0): ?>
         <tr>
-            <td colspan="5"> <b>Nenhum registro encontrado.</b></td>
+            <td colspan="5"> <center><br><br><br><b>Nenhum registro encontrado.</b></td></center>
         </tr>
     <?php endif ?>
 
