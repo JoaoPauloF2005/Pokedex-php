@@ -1,7 +1,4 @@
-body{
-    background-image: url(/../img/ribamar.jpg);
-    background-size: cover; 
-}
+
 #menu-h img {
     margin-top: 15px;
     height: 100px;
@@ -12,6 +9,7 @@ body{
 }
 
 #menu-h li {
+    font-family: 'Roboto Slab', serif;
     margin-left: 200px;
     margin-top: 45px;
     float: left;
@@ -36,20 +34,8 @@ body{
     background-color: rgb(255, 2, 2);
 }
 
-#login ul li{
-    float: right;
-    display: inline;
-    font-family:'Times New Roman', Times, serif;
-}
 
-#login{
-    border-style:inset;
-    border-color: red;
-    border-radius: 8px;
-    color: #000000;
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 45px;
-}
+
+
+
 
