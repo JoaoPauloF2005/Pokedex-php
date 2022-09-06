@@ -27,6 +27,7 @@
 
 
     <?php foreach($model->rows as $item): ?>
+       
             <div class="card">
                 <img class="card-img-top" src="<?= $item['imagem'] ?>">
                 <div class="card-body">
@@ -46,6 +47,7 @@
                     <a href="/pokedex/delete?id=<?= $item['id'] ?>" class="card-link">Deletar</a>
                 </div>
             </div>
+   
             <td>
         </tr>
     <?php endforeach ?>
