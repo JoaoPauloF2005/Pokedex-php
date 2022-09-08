@@ -43,7 +43,7 @@
                     </ul>
                 </div>
                 <div class="card-body">
-                <a href="/pokedex/form?id=<?= $item['id'] ?>" class="card-link">Editar Pokemon</a></b>
+                <a href="/pokedex/form?id=<?= $item['id'] ?>" class="card-link">Editar Pokémon</a></b>
                     <a href="/pokedex/delete?id=<?= $item['id'] ?>" class="card-link">Deletar</a>
                 </div>
             </div>

@@ -11,19 +11,30 @@ body{
     font-size: 16px;
     display: inline-flex;
     max-width: 300px;
-    border: solid;
-    box-shadow: 3px 3px black;
+    border: outset red;
+    box-shadow: 3px 3px rgb(209, 209, 209);
     margin-right: 20px;
     margin-left: 40px;
 }
 
 .list-group-item{
+   
     color: black;
 }
 
+
 .card-link{
-    color:darkcyan;
-    text-decoration:none;
+
+    border-radius: 8px;
+    color:rgb(0, 0, 0);
+    padding: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background .4s;
+}
+
+.card-link:hover{
+    background-color: rgb(223, 6, 6);
 }
 
 .card img{
@@ -40,3 +51,13 @@ body{
     color: #ffffff;
 }
 
+ .card-text{
+   
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:medium;
+}
+
+.h5 p{
+   
+    background-color: aliceblue;
+}
